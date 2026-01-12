@@ -1,0 +1,698 @@
+{
+  "site_metadata": {
+    "brand_name": "HumanAIze",
+    "logo_file": "HumanAIze Logo.png",
+    "logo_placement": "header_left_with_text",
+    "tagline": {
+      "ar": "تنسيق أعمال الذكاء الاصطناعي للشركات في DACH والإمارات العربية المتحدة"
+    },
+    "default_language": "en",
+    "supported_languages": [
+      "en",
+      "de"
+    ],
+    "primary_regions": [
+      "DACH",
+      "UAE"
+    ],
+    "headquarters": "UAE",
+    "contact": {
+      "email": "bagmi.sahoo007@gmail.com",
+      "phone": "+971 55965 8808",
+      "address": "BC-888856, Amber Gem Tower, UAE"
+    }
+  },
+  "navigation": {
+    "items": [
+      {
+        "id": "home",
+        "label": {
+          "ar": "بيت"
+        },
+        "url": "/"
+      },
+      {
+        "id": "services",
+        "label": {
+          "ar": "خدمات"
+        },
+        "url": "/services"
+      },
+      {
+        "id": "how_we_work",
+        "label": {
+          "ar": "كيف نعمل"
+        },
+        "url": "/how-we-work"
+      },
+      {
+        "id": "case_studies",
+        "label": {
+          "ar": "دراسات الحالة"
+        },
+        "url": "/case-studies"
+      },
+      {
+        "id": "about",
+        "label": {
+          "ar": "حول والمؤسس"
+        },
+        "url": "/about"
+      },
+      {
+        "id": "resources",
+        "label": {
+          "ar": "موارد"
+        },
+        "url": "/resources"
+      },
+      {
+        "id": "contact",
+        "label": {
+          "ar": "اتصال"
+        },
+        "url": "/contact"
+      }
+    ]
+  },
+  "seo": {
+    "global": {
+      "ar": {
+        "title": "HumanAIze – AI-Business Orchestrator for DACH & UAE | 90-Day ROI",
+        "meta_description": "HumanAIze helps DACH and UAE enterprises turn AI and digital transformation into measurable ROI in 90 days. Strategy, execution, and ROI-as-a-Service with human-first, compliant approach.",
+        "keywords": [
+          "AI business orchestrator",
+          "AI consulting DACH",
+          "AI consulting UAE",
+          "digital transformation partner",
+          "Industry 4.0 ROI",
+          "cloud and SAP modernization",
+          "KI-Beratung",
+          "digitale Transformation"
+        ]
+      }
+    }
+  },
+  "pages": [
+    {
+      "page_id": "homepage",
+      "url": "/",
+      "seo": {
+        "ar": {
+          "title": "HumanAIze – AI-Business Orchestrator | 90-Day ROI for DACH & UAE",
+          "meta_description": "Transform AI ambitions into measurable business value. HumanAIze orchestrates strategy, technology, and delivery for DACH and UAE enterprises."
+        }
+      },
+      "sections": [
+        {
+          "section_id": "hero",
+          "type": "hero",
+          "layout": "two_column",
+          "content": {
+            "ar": {
+              "h1": "Future-Proofing DACH & UAE Businesses with AI-Business Orchestration",
+              "subheading": "We orchestrate AI, data, and digital transformation around your P&L—delivering measurable ROI in 90 days with human-first, compliant execution across DACH and UAE.",
+              "highlights": [
+                "ROI-as-a-Service for DACH & UAE enterprises",
+                "90-Day measurable outcomes",
+                "Human-first, governance-by-design",
+                "Networked delivery across EMEA and beyond"
+              ],
+              "cta_primary": {
+                "text": "Book a Discovery Call",
+                "url": "/contact",
+                "type": "primary"
+              },
+              "cta_secondary": {
+                "text": "Download the AI ROI Playbook",
+                "url": "/resources/ai-roi-playbook",
+                "type": "secondary"
+              }
+            }
+          }
+        },
+        {
+          "section_id": "trust_strip",
+          "type": "trust_bar",
+          "content": {
+            "ar": {
+              "regions": "Serving DACH (Germany, Austria, Switzerland) & UAE | Mid-tier to Large Enterprises",
+              "sectors": "Core sectors: Manufacturing · Healthcare · Retail · Banking & Insurance · Logistics · Energy",
+              "trusted_by_label": "Trusted by",
+              "clients": [
+                "Mercedes-Benz AG",
+                "HSBC",
+                "DHL",
+                "Henkel",
+                "AstraZeneca",
+                "E.ON",
+                "Stadtwerke Heidelberg",
+                "Pfizer"
+              ]
+            }
+          }
+        },
+        {
+          "section_id": "about_snapshot",
+          "type": "content_block",
+          "content": {
+            "ar": {
+              "h2": "HumanAIze: Your AI-Business Orchestrator",
+              "body": "HumanAIze is a boutique consultancy helping DACH and UAE enterprises translate AI and digital ambitions into measurable business value.\n\nAs an AI-Business orchestrator, we sit at the intersection of strategy, technology, data, and delivery partners. Instead of isolated pilots or vendor-led projects, we align everything around your P&L KPIs, regulatory environment, and culture—from Germany to the Gulf.\n\nFrom AI opportunity mapping to 90-day MVPs and scaled rollouts, we own the roadmap, the execution, and the ROI narrative.",
+              "metrics": [
+                {
+                  "value": "17+",
+                  "label": "Years in digital & AI transformation"
+                },
+                {
+                  "value": "90 Days",
+                  "label": "to first measurable ROI"
+                },
+                {
+                  "value": "30%+",
+                  "label": "Efficiency gains"
+                },
+                {
+                  "value": "25%+",
+                  "label": "CSAT improvement"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "section_id": "services_overview",
+          "type": "card_grid",
+          "content": {
+            "ar": {
+              "h2": "What We Orchestrate",
+              "cards": [
+                {
+                  "title": "Digital Transformation",
+                  "description": "Modern SAP and cloud foundations for DACH & UAE growth.",
+                  "features": [
+                    "SAP Consulting & Implementation",
+                    "Cloud Transformation & FinOps",
+                    "Secure, compliant modernization"
+                  ],
+                  "cta": {
+                    "text": "Learn More",
+                    "url": "/services#digital-transformation"
+                  }
+                },
+                {
+                  "title": "AI Strategy & ROI-as-a-Service",
+                  "description": "From AI hype to 90-day business outcomes.",
+                  "features": [
+                    "AI Opportunity Mapping",
+                    "Agile MVPs",
+                    "ROI-as-a-Service dashboards"
+                  ],
+                  "cta": {
+                    "text": "Learn More",
+                    "url": "/services#ai-strategy"
+                  }
+                },
+                {
+                  "title": "Enterprise Architecture & Operating Models",
+                  "description": "Harmonized processes that make AI and digital actually work.",
+                  "features": [
+                    "Process Harmonization",
+                    "Capability Mapping",
+                    "Operating Model & Governance"
+                  ],
+                  "cta": {
+                    "text": "Learn More",
+                    "url": "/services#enterprise-architecture"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "section_id": "how_we_work_teaser",
+          "type": "content_block",
+          "content": {
+            "ar": {
+              "h2": "How We Work: From Strategy to 90-Day ROI",
+              "body": "Whether you are a DACH manufacturer modernizing plants or a UAE healthcare provider scaling AI, we use the same proven 5-step orchestration framework to move from idea to measurable impact.",
+              "steps": [
+                "Strategy & AI-Business Opportunity Mapping",
+                "Design & Partner Orchestration",
+                "Agile Implementation (90-Day Sprints)",
+                "ROI-as-a-Service",
+                "Scale & Govern"
+              ],
+              "cta": {
+                "text": "See the Full Delivery Model",
+                "url": "/how-we-work"
+              }
+            }
+          }
+        },
+        {
+          "section_id": "case_studies_highlight",
+          "type": "card_grid",
+          "content": {
+            "ar": {
+              "h2": "Proven ROI Across DACH & UAE Use Cases",
+              "cards": [
+                {
+                  "title": "Manufacturing (DACH): AI-Driven Quality Assurance",
+                  "metrics": [
+                    {
+                      "value": "+15pp",
+                      "label": "defect detection (80% → 95%)"
+                    },
+                    {
+                      "value": "30%",
+                      "label": "throughput gain"
+                    },
+                    {
+                      "value": "100%",
+                      "label": "ERP traceability for audits"
+                    }
+                  ]
+                },
+                {
+                  "title": "Logistics (DACH & UAE): AI-Powered AGV",
+                  "metrics": [
+                    {
+                      "value": "20–40%",
+                      "label": "manpower capacity freed"
+                    },
+                    {
+                      "value": "100%",
+                      "label": "automated material flow"
+                    },
+                    {
+                      "value": "Real-time",
+                      "label": "order scheduling"
+                    }
+                  ]
+                },
+                {
+                  "title": "Insurance & Healthcare: Medical Forms AI",
+                  "metrics": [
+                    {
+                      "value": "92%",
+                      "label": "extraction accuracy"
+                    },
+                    {
+                      "value": "<1 day",
+                      "label": "turnaround (from 5–7 days)"
+                    },
+                    {
+                      "value": "50%",
+                      "label": "cost reduction"
+                    }
+                  ]
+                }
+              ],
+              "cta": {
+                "text": "Explore Detailed Case Studies",
+                "url": "/case-studies"
+              }
+            }
+          }
+        },
+        {
+          "section_id": "founder_snapshot",
+          "type": "content_block",
+          "content": {
+            "ar": {
+              "h2": "Led by Cross-Regional Experience",
+              "body": "Bagmi Sahoo, founder of HumanAIze, has spent 17+ years leading digital and AI initiatives across Europe and the Middle East, including Fortune 500s.\n\nHer work has delivered +30% efficiency, −28% IT costs, and +25% customer satisfaction across EMEA, NAFTA, APAC and GCC—bridging German precision with UAE agility.",
+              "cta": {
+                "text": "Read the Founder Story",
+                "url": "/about#founder"
+              }
+            }
+          }
+        },
+        {
+          "section_id": "final_cta",
+          "type": "cta_block",
+          "content": {
+            "ar": {
+              "h2": "Ready to Orchestrate AI Across DACH or UAE?",
+              "cta_primary": {
+                "text": "Book a Discovery Call",
+                "url": "/contact"
+              },
+              "cta_secondary": {
+                "text": "Contact Us",
+                "url": "/contact"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "services",
+      "url": "/services",
+      "seo": {
+        "ar": {
+          "title": "Services – AI Strategy, Digital Transformation & Enterprise Architecture | HumanAIze",
+          "meta_description": "Comprehensive AI and digital transformation services for DACH and UAE enterprises. From SAP modernization to ROI-as-a-Service."
+        }
+      },
+      "sections": [
+        {
+          "section_id": "intro",
+          "type": "hero",
+          "content": {
+            "ar": {
+              "h1": "Services: From Strategy to Scaled AI ROI in DACH & UAE",
+              "body": "We don't push tools. We orchestrate strategy, architecture, delivery partners and change so your AI and digital investments pay off fast—whether your plants are in Bavaria or your HQ is in Dubai."
+            }
+          }
+        },
+        {
+          "section_id": "digital_transformation",
+          "type": "service_detail",
+          "anchor": "digital-transformation",
+          "content": {
+            "ar": {
+              "h2": "Digital Transformation: SAP & Cloud for DACH & UAE",
+              "description": "Modernize your ERP and cloud landscape in a way that respects DACH regulations and leverages UAE speed and innovation.",
+              "sub_services": [
+                {
+                  "title": "SAP Consulting & Implementation",
+                  "details": [
+                    "Roadmap from ECC to S/4HANA or optimization of existing S/4HANA",
+                    "Process harmonization across DACH plants and UAE operations",
+                    "Integration with MES, CRM and industry solutions",
+                    "KPI focus: process lead time, error rates, automation level, audit readiness"
+                  ]
+                },
+                {
+                  "title": "Cloud Transformation & FinOps",
+                  "details": [
+                    "Cloud strategy covering EU data residency and UAE hosting options",
+                    "Secure, compliant migration with cost governance",
+                    "FinOps frameworks tuned to multi-region setups",
+                    "KPIs: infrastructure cost/unit, uptime, deployment frequency, incident reduction"
+                  ]
+                }
+              ],
+              "outcomes": [
+                "15–30% reduction in process cycle time",
+                "20–28% IT cost optimization",
+                "Improved audit and compliance readiness across both regions"
+              ]
+            }
+          }
+        },
+        {
+          "section_id": "ai_strategy",
+          "type": "service_detail",
+          "anchor": "ai-strategy",
+          "content": {
+            "ar": {
+              "h2": "AI Strategy & ROI-as-a-Service for DACH & UAE",
+              "description": "Turn AI into a portfolio of measurable initiatives, not scattered pilots. We align AI use cases with P&L, OEE, and regulatory needs in both highly regulated DACH environments and fast-moving UAE ecosystems.",
+              "capabilities": [
+                {
+                  "title": "AI Opportunity Mapping",
+                  "details": [
+                    "Cross-functional workshops in DACH/UAE locations",
+                    "Use case backlog tied to business KPIs and regulatory constraints (e.g., EU data protection, sector guidelines in UAE)",
+                    "Value scoring: feasibility, impact, time-to-value",
+                    "DACH-specific considerations: works councils, data protection, industry regulations"
+                  ]
+                },
+                {
+                  "title": "Agile AI MVPs & Pilots",
+                  "details": [
+                    "6–12 week MVPs with baseline/target KPI definition",
+                    "Partner curation across Europe, UAE and other regions",
+                    "Deployment in production-like environments with user onboarding",
+                    "KPI reporting packs for stakeholders and boards"
+                  ]
+                },
+                {
+                  "title": "ROI-as-a-Service",
+                  "details": [
+                    "Continuous measurement of before/after metrics",
+                    "ROI dashboards and executive summaries",
+                    "Optimization and rollout support to additional sites/functions"
+                  ]
+                }
+              ],
+              "typical_kpis": [
+                "20–40% process time reduction",
+                "10–30% cost avoidance",
+                "15–25% productivity uplift per FTE",
+                "Increased regulatory and audit compliance scores"
+              ]
+            }
+          }
+        },
+        {
+          "section_id": "enterprise_architecture",
+          "type": "service_detail",
+          "anchor": "enterprise-architecture",
+          "content": {
+            "ar": {
+              "h2": "Enterprise Architecture & Operating Model Alignment",
+              "description": "We design architectures and operating models that work for distributed organizations—for example, a German HQ with shared services in the UAE, or a UAE HQ serving DACH customers.",
+              "offerings": [
+                {
+                  "title": "Process Harmonization & Capability Mapping",
+                  "details": [
+                    "As-is vs. to-be process mapping",
+                    "Cross-plant and cross-market harmonization",
+                    "Capability maps that link processes, systems, and data"
+                  ]
+                },
+                {
+                  "title": "Operating Model & Governance",
+                  "details": [
+                    "Target operating model for digital and AI (roles, RACI, skills)",
+                    "Governance frameworks for AI ethics, security, and compliance",
+                    "Change management and culture enablement for multi-cultural teams"
+                  ]
+                }
+              ],
+              "outcomes": [
+                "Less fragmentation and shadow IT",
+                "Clear ownership and accountability",
+                "Higher adoption of new AI and digital solutions"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "how_we_work",
+      "url": "/how-we-work",
+      "seo": {
+        "ar": {
+          "title": "How We Work – 5-Step AI Orchestration Framework | HumanAIze",
+          "meta_description": "Our proven 5-step framework delivers measurable AI and digital transformation ROI in 90 days for DACH and UAE enterprises."
+        }
+      },
+      "sections": [
+        {
+          "section_id": "intro",
+          "type": "hero",
+          "content": {
+            "ar": {
+              "h1": "How We Orchestrate AI Across DACH & UAE",
+              "body": "HumanAIze acts as your AI-Business orchestrator—bridging business, IT and external partners across time zones and cultures. We bring DACH precision, UAE agility, and a global partner network together under one accountable owner."
+            }
+          }
+        },
+        {
+          "section_id": "five_step_framework",
+          "type": "process_steps",
+          "content": {
+            "ar": {
+              "h2": "5-Step Delivery Framework",
+              "steps": [
+                {
+                  "number": 1,
+                  "title": "Strategy & AI-Business Opportunity Mapping",
+                  "problem": "AI initiatives often start from technology, not business needs.",
+                  "approach": "Workshops with business and IT; creation of an AI & digital opportunity map tied to P&L KPIs (EBIT, cost-to-serve, OEE, NPS). From Stuttgart to Sharjah, we align AI and digital opportunities with your P&L, regional regulations, and on-the-ground realities.",
+                  "value": "A prioritized, DACH & UAE-relevant roadmap with quantified value potential."
+                },
+                {
+                  "number": 2,
+                  "title": "Design & Partner Orchestration",
+                  "problem": "Fragmented vendors and legacy stacks slow progress.",
+                  "approach": "Define target architecture, data flows, and integration; select and orchestrate global implementation partners across DACH, UAE and other regions.",
+                  "value": "Reduced risk, faster time-to-value, and vendor-agnostic recommendations."
+                },
+                {
+                  "number": 3,
+                  "title": "Agile Implementation (90-Day Sprints)",
+                  "problem": "Projects run long without proof of value.",
+                  "approach": "6–12 week sprints delivering MVPs or pilots with clear success metrics and user feedback.",
+                  "value": "Tangible outcomes in 90 days, with clear go/no-go and scale decisions."
+                },
+                {
+                  "number": 4,
+                  "title": "ROI-as-a-Service",
+                  "problem": "Benefits are rarely measured or communicated.",
+                  "approach": "Before/after metric tracking, dashboards, and value reports for leadership and boards.",
+                  "value": "Clear story of ROI and risk reduction that supports further investment decisions."
+                },
+                {
+                  "number": 5,
+                  "title": "Scale & Govern",
+                  "problem": "Successful pilots don't scale consistently across plants or countries.",
+                  "approach": "Blueprinting, rollout planning, governance frameworks, change management, and training.",
+                  "value": "Repeatable, compliant scaling across DACH, UAE and global operations."
+                }
+              ]
+            }
+          }
+        },
+        {
+          "section_id": "engagement_models",
+          "type": "content_block",
+          "content": {
+            "ar": {
+              "h2": "Engagement Models & Investment Approach",
+              "intro": "Our clients in DACH and UAE work under different budget cycles, procurement rules, and investment horizons. We structure engagements to give you predictable effort and visible value, without locking you into long, inflexible contracts.",
+              "models": [
+                {
+                  "title": "Strategic Consulting (Fixed-Fee)",
+                  "what_it_is": "A 4–8 week engagement focused on assessment, AI & digital opportunity mapping, and roadmap creation for one or more regions (DACH, UAE or both).",
+                  "investment_model": "Fixed fee agreed upfront, based on number of workshops, sites and stakeholders. No surprises—travel and additional services are scoped transparently.",
+                  "when_right": [
+                    "You need clarity on which AI and digital initiatives to prioritize",
+                    "You want a neutral, vendor-agnostic view before committing to big programs"
+                  ]
+                },
+                {
+                  "title": "Agile Implementation (Milestone-Based or T&M)",
+                  "what_it_is": "6–12 week implementation sprints to deliver AI MVPs, pilots, or process modernization, using curated partners in DACH, UAE and other regions.",
+                  "investment_model": "Either milestone-based fees tied to specific deliverables, or time & materials for flexible, evolving initiatives. In both cases, we align scope with 90-day ROI checkpoints so you see value early.",
+                  "when_right": [
+                    "You already have a shortlist of use cases or a roadmap",
+                    "You need a delivery engine that connects business, IT, and vendors"
+                  ]
+                },
+                {
+                  "title": "Retainer (Monthly)",
+                  "what_it_is": "Ongoing orchestration support, acting as your fractional AI & Transformation Office across DACH and UAE.",
+                  "investment_model": "Monthly fee based on expected advisory days, governance responsibilities, and number of active initiatives. Scope is reviewed regularly so it stays aligned with your priorities.",
+                  "when_right": [
+                    "You want continuity beyond projects—governance, scaling, and partner coordination",
+                    "You need senior expertise on demand without hiring a full internal team"
+                  ]
+                }
+              ],
+              "closing": "Regardless of model, we always connect investment to expected ROI, using KPIs such as process cycle time, error rates, cost-to-serve, OEE, customer satisfaction, and compliance risk.\n\nOur goal is simple: for you to see and communicate the business case—internally and to your board—before scaling further.",
+              "cta": {
+                "text": "Discuss the Right Engagement for You",
+                "url": "/contact"
+              }
+            }
+          }
+        },
+        {
+          "section_id": "pricing_investment",
+          "type": "content_block",
+          "content": {
+            "ar": {
+              "h2": "Typical Investment & ROI",
+              "intro": "Every organization is different, and so are our engagements. Instead of one-size-fits-all packages, we scope work based on region (DACH, UAE or both), number of sites, and complexity of your landscape.\n\nWhat you can expect is a clear engagement model and a transparent value story before you commit.",
+              "investment_types": [
+                {
+                  "title": "Strategic AI & Digital Roadmap (4–8 Weeks)",
+                  "description": "Fixed-fee engagement focused on understanding your current state in DACH and/or UAE.",
+                  "deliverables": "Prioritized AI & digital opportunity map, high-level architecture, and 12–18 month roadmap.",
+                  "best_for": "Organizations that need clarity on where to start and what to stop."
+                },
+                {
+                  "title": "90-Day ROI Program",
+                  "description": "Outcome-based engagement to implement 1–3 high-value use cases.",
+                  "deliverables": "Discovery, solution design, partner orchestration, implementation sprints, and ROI reporting.",
+                  "best_for": "Organizations wanting tangible proof of value before scaling AI or Industry 4.0 investments."
+                },
+                {
+                  "title": "Ongoing Orchestration Retainer",
+                  "description": "Monthly engagement acting as your fractional AI & Transformation Office across DACH and UAE.",
+                  "deliverables": "Roadmap governance, partner coordination, KPI tracking, and change support.",
+                  "best_for": "Organizations that see AI as a continuous capability, not a one-off project."
+                }
+              ],
+              "outcome_framing": "For each engagement, we provide:\n\n• A clear scope and effort estimate\n• A value hypothesis with expected efficiency, cost, or revenue impact\n• A before/after KPI measurement plan so your leadership team can see exactly what you gained",
+              "cta": {
+                "text": "Request a Tailored Proposal",
+                "url": "/contact"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "about",
+      "url": "/about",
+      "seo": {
+        "ar": {
+          "title": "About HumanAIze – AI-Business Orchestrator for DACH & UAE",
+          "meta_description": "Learn about HumanAIze's mission, values, and founder Bagmi Sahoo's 17+ years delivering digital transformation across DACH and UAE."
+        }
+      },
+      "sections": [
+        {
+          "section_id": "about_intro",
+          "type": "hero",
+          "content": {
+            "ar": {
+              "h1": "About HumanAIze",
+              "body": "HumanAIze is a boutique AI-Business orchestration consultancy enabling enterprises in DACH and the UAE to unlock measurable ROI from AI and digital initiatives.\n\nHeadquartered in the UAE with deep roots in the DACH region, we bridge German precision with UAE agility—orchestrating global implementation partners across EMEA, the Americas and Asia.\n\nOur promise: clear strategy, focused execution, and measurable outcomes in 90 days, wherever your teams are located."
+            }
+          }
+        },
+        {
+          "section_id": "brand_pillars",
+          "type": "content_block",
+          "content": {
+            "ar": {
+              "h2": "Our Brand Pillars",
+              "pillars": [
+                {
+                  "title": "Human-First Transformation",
+                  "description": "Technology should empower people, not replace them. We design solutions that respect your culture, skills, and works council realities."
+                },
+                {
+                  "title": "Value-First AI",
+                  "description": "Every use case is tied to business outcomes and KPIs from day one. No vanity pilots—only initiatives with clear value hypotheses."
+                },
+                {
+                  "title": "Secure, Ethical & Compliant by Design",
+                  "description": "Governance is built into architectures and operating models. We consider security, privacy, and regulatory needs for DACH and UAE from the start."
+                },
+                {
+                  "title": "Networked Delivery, Single Accountability",
+                  "description": "We orchestrate a network of vetted partners, but you have one accountable orchestrator—HumanAIze."
+                }
+              ]
+            }
+          }
+        },
+        {
+          "section_id": "founder_story",
+          "type": "content_block",
+          "anchor": "founder",
+          "content": {
+            "ar": {
+              "h2": "Founder: Bagmi Sahoo",
+              "body": "Bagmi Sahoo founded HumanAIze after spending over 17 years leading complex digital and AI initiatives across Fortune 500s and high-growth organizations.\n\nAt Mercedes-Benz, she led a community-driven initiative that became the blueprint for IT standardization and business-operating model alignment—earning recognition at board level. She architected an AR/VR production solution recognized among the Top 20 CIO Projects, demonstrating her ability to turn emerging technology into real-world impact.\n\nAcross roles with companies like IBM, Henkel and others, her work has delivered +30% efficiency, −28% IT cost, and +25% customer satisfaction across EMEA, NAFTA, APAC and GCC.\n\nAs a Global AI Delegate connecting Germany and the UAE, Bagmi understands both DACH expectations for rigor and compliance and the speed and innovation mindset of emerging markets.\n\nHumanAIze is the result: a consulting partner that can translate complex technology into clear business narratives—and orchestrate the ecosystem required to deliver."
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
