@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/lib/language-context';
-import { getNavigationItems, getSiteMetadata } from '@/lib/content';
+import { NAV_ITEMS, PRIMARY_CTA } from '@/lib/site';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -20,16 +20,10 @@ export default function Header() {
   const { language, setLanguage } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [navItems, setNavItems] = useState<any[]>([]);
-  const [brandName, setBrandName] = useState('HumanAIze');
+  // Static nav so links are present in the server-rendered HTML (no client-only gating).
+  const navItems = NAV_ITEMS.filter((i) => i.id !== 'contact');
+  const brandName = 'HumanAIze';
   const pathname = usePathname();
-
-  useEffect(() => {
-    const items = getNavigationItems(language);
-    setNavItems(items);
-    const metadata = getSiteMetadata(language);
-    setBrandName(metadata?.brand_name || 'HumanAIze');
-  }, [language]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -72,7 +66,7 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
             {navItems?.map?.((item: any) => {
-              const label = item?.label?.[language] || item?.label?.en || '';
+              const label = item.label[language] || item.label.en;
               const url = item?.url || '/';
               const isActive = pathname === url;
               
@@ -125,7 +119,7 @@ export default function Header() {
             {/* CTA Button - Desktop */}
             <Link href="/contact" className="hidden md:block">
               <Button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold px-8 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all">
-                {language === 'de' ? 'Discovery Call buchen' : language === 'ar' ? 'احجز مكالمة الاكتشاف' : 'Book Your Discovery Call'}
+                {language === 'de' ? 'Diagnose buchen' : language === 'ar' ? 'احجز التشخيص' : 'Book a diagnostic'}
               </Button>
             </Link>
 
@@ -143,7 +137,7 @@ export default function Header() {
         {isMobileMenuOpen && (
           <nav className="lg:hidden py-4 border-t">
             {navItems?.map?.((item: any) => {
-              const label = item?.label?.[language] || item?.label?.en || '';
+              const label = item.label[language] || item.label.en;
               const url = item?.url || '/';
               const isActive = pathname === url;
               
@@ -186,7 +180,7 @@ export default function Header() {
             <div className="px-4 py-3">
               <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold py-3 rounded-full">
-                  {language === 'de' ? 'Discovery Call buchen' : language === 'ar' ? 'احجز مكالمة الاكتشاف' : 'Book Your Discovery Call'}
+                  {language === 'de' ? 'Diagnose buchen' : language === 'ar' ? 'احجز التشخيص' : 'Book a diagnostic'}
                 </Button>
               </Link>
             </div>

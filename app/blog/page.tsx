@@ -1,15 +1,24 @@
-
 import dynamic from 'next/dynamic';
+import { pageMetadata } from '@/lib/site';
+import { Section, CtaWithSupport } from '@/components/site/ui';
 
-const BlogPage = dynamic(() => import('@/components/pages/blog-page'), {
-  ssr: true,
-});
+const BlogPage = dynamic(() => import('@/components/pages/blog-page'), { ssr: true });
 
-export const metadata = {
-  title: 'Blog - AI Insights for DACH & UAE | HumanAIze',
-  description: 'Strategic insights on AI adoption, digital transformation, and cross-regional learnings for DACH and UAE enterprises.',
-};
+export const metadata = pageMetadata(
+  '/blog',
+  'Insights | AI Transformation for DACH & UAE | HumanAIze',
+  'Insights from HumanAIze on outcome-linked AI transformation, AI ROI and cross-regional learnings for DACH and UAE enterprises.',
+);
 
 export default function Blog() {
-  return <BlogPage />;
+  return (
+    <>
+      <BlogPage />
+      <div className="bg-[#1E2A45] text-[#E2E8F0]">
+        <Section>
+          <CtaWithSupport secondary />
+        </Section>
+      </div>
+    </>
+  );
 }

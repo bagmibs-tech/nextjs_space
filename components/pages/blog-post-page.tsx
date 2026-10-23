@@ -12,13 +12,14 @@ import ReactMarkdown from 'react-markdown';
 
 interface BlogPostPageProps {
   slug: string;
+  initialContent?: string;
 }
 
-export default function BlogPostPage({ slug }: BlogPostPageProps) {
+export default function BlogPostPage({ slug, initialContent = '' }: BlogPostPageProps) {
   const { language } = useLanguage();
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [content, setContent] = useState('');
-  const [loading, setLoading] = useState(true);
+  const [content, setContent] = useState(initialContent);
+  const [loading, setLoading] = useState(!initialContent);
 
   const postMetadata: Record<string, any> = {
     'dach-ai-acceleration': {
@@ -53,6 +54,7 @@ export default function BlogPostPage({ slug }: BlogPostPageProps) {
   const metadata = postMetadata?.[slug] || {};
 
   useEffect(() => {
+    if (initialContent) return;
     const fetchContent = async () => {
       try {
         const response = await fetch(`/blog/${slug}.md`);
@@ -68,7 +70,7 @@ export default function BlogPostPage({ slug }: BlogPostPageProps) {
     };
 
     fetchContent();
-  }, [slug]);
+  }, [slug, initialContent]);
 
   const texts = {
     en: { backToBlog: 'Back to Blog' },
@@ -91,7 +93,7 @@ export default function BlogPostPage({ slug }: BlogPostPageProps) {
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 30 }}
+          initial={false}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
         >

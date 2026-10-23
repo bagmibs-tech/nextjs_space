@@ -1,3 +1,4 @@
+import { pageMetadata } from '@/lib/site';
 
 import { Metadata } from 'next';
 import Link from 'next/link';
@@ -5,10 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Case Studies - AI & Digital Transformation | HumanAIze',
-  description: 'Explore success stories of AI and digital transformation projects across DACH and UAE enterprises.',
-};
+export const metadata = pageMetadata('/case-studies', 'Case Studies - AI & Digital Transformation | HumanAIze', 'Explore success stories of AI and digital transformation projects across DACH and UAE enterprises.');
 
 export default function CaseStudies() {
   return (

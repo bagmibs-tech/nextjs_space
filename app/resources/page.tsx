@@ -1,13 +1,11 @@
+import { pageMetadata } from '@/lib/site';
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { FileText, Target } from 'lucide-react';
 
-export const metadata = {
-  title: 'Resources | HumanAIze',
-  description: 'Access our AI readiness assessment and other resources for DACH and UAE enterprises.',
-};
+export const metadata = pageMetadata('/resources', 'Resources | HumanAIze', 'Access our AI readiness assessment and other resources for DACH and UAE enterprises.');
 
 export default function Resources() {
   return (

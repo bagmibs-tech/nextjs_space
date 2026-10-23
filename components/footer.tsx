@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/lib/language-context';
 import { getSiteMetadata } from '@/lib/content';
+import { NAV_ITEMS, FOOTER_TAGLINE } from '@/lib/site';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
@@ -14,12 +15,6 @@ export default function Footer() {
     const data = getSiteMetadata(language);
     setMetadata(data);
   }, [language]);
-
-  const thankYouTexts = {
-    en: 'Thank you for considering HumanAIze as your partner in driving impactful AI transformations. We look forward to helping you unlock new possibilities and achieve your strategic objectives.',
-    de: 'Vielen Dank, dass Sie HumanAIze als Partner für wirkungsvolle KI-Transformationen in Betracht ziehen. Wir freuen uns darauf, Ihnen zu helfen, neue Möglichkeiten zu erschließen und Ihre strategischen Ziele zu erreichen.',
-    ar: 'شكراً لكم على اعتبار HumanAIze شريككم في قيادة تحولات الذكاء الاصطناعي المؤثرة. نتطلع إلى مساعدتكم في فتح إمكانيات جديدة وتحقيق أهدافكم الاستراتيجية.',
-  };
 
   return (
     <footer className="bg-gradient-to-b from-background to-navy-dark text-gray-300 border-t border-cyan-500/10">
@@ -113,31 +108,13 @@ export default function Footer() {
               {language === 'de' ? 'Quick Links' : language === 'ar' ? 'روابط سريعة' : 'Quick Links'}
             </h4>
             <ul className="space-y-3">
-              <li>
-                <Link href="/" className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
-                  {language === 'de' ? 'Startseite' : language === 'ar' ? 'الصفحة الرئيسية' : 'Home'}
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
-                  {language === 'de' ? 'Über uns' : language === 'ar' ? 'معلومات عنا' : 'About'}
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
-                  {language === 'de' ? 'Leistungen' : language === 'ar' ? 'خدمات' : 'Services'}
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
-                  {language === 'de' ? 'Kontakt' : language === 'ar' ? 'اتصل بنا' : 'Contact'}
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
-                  {language === 'de' ? 'Blog' : language === 'ar' ? 'المدونة' : 'Blog'}
-                </Link>
-              </li>
+              {[...NAV_ITEMS, { id: 'faq', url: '/faq', label: { en: 'FAQ', de: 'FAQ', ar: 'الأسئلة الشائعة' } }].map((item) => (
+                <li key={item.id}>
+                  <Link href={item.url} className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
+                    {item.label[language] || item.label.en}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -147,26 +124,19 @@ export default function Footer() {
               {language === 'de' ? 'Dienstleistungen' : language === 'ar' ? 'خدمات' : 'Services'}
             </h4>
             <ul className="space-y-3">
-              <li className="text-sm text-gray-400">
-                {language === 'de' ? 'AI-Strategie & ROI' : language === 'ar' ? 'استراتيجية الذكاء الاصطناعي' : 'AI Strategy & ROI'}
-              </li>
-              <li className="text-sm text-gray-400">
-                {language === 'de' ? 'Digitale Transformation' : language === 'ar' ? 'التحول الرقمي' : 'Digital Transformation'}
-              </li>
-              <li className="text-sm text-gray-400">
-                {language === 'de' ? 'Unternehmensarchitektur' : language === 'ar' ? 'هندسة المؤسسة' : 'Enterprise Architecture'}
-              </li>
-              <li className="text-sm text-gray-400">
-                {language === 'de' ? 'Cloud & SAP Modernisierung' : language === 'ar' ? 'التحديث السحابي' : 'Cloud & SAP Modernization'}
-              </li>
+              {['Blindspot', 'Assess', 'Activate', 'Implement', 'Embed'].map((name) => (
+                <li key={name}>
+                  <Link href={`/services#${name.toLowerCase()}`} className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">{name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
-        {/* Thank You Message */}
+        {/* Tagline */}
         <div className="mb-10 pb-10 border-b border-cyan-500/10">
-          <p className="text-sm text-gray-400 text-center max-w-4xl mx-auto leading-relaxed">
-            {thankYouTexts[language as keyof typeof thankYouTexts] || thankYouTexts.en}
+          <p className="text-sm text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
+            <strong className="text-white">HumanAIze.</strong> {FOOTER_TAGLINE}
           </p>
         </div>
 

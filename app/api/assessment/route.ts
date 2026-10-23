@@ -1,12 +1,13 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
+import { withErrorHandling } from '@/lib/api-handler';
 
 export const dynamic = 'force-dynamic';
 
 const prisma = new PrismaClient();
 
-export async function POST(request: NextRequest) {
+async function handlePost(request: NextRequest) {
   try {
     const body = await request.json();
     const { email, companyName, industryType, companySize, responses, scores, overallScore, recommendations } = body;
@@ -42,3 +43,5 @@ export async function POST(request: NextRequest) {
     await prisma.$disconnect();
   }
 }
+
+export const POST = withErrorHandling(handlePost);
