@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 
-type Handler = (req: Request, ctx?: any) => Promise<Response> | Response;
+type Handler<R extends Request> = (req: R, ctx?: any) => Promise<Response> | Response;
 
-/** Wraps an API route so unexpected failures return JSON instead of crashing. */
-export function withErrorHandling(handler: Handler): Handler {
+/** Wraps an API route so unexpected failures return JSON 503 instead of crashing. */
+export function withErrorHandling<R extends Request>(handler: Handler<R>): Handler<R> {
   return async (req, ctx) => {
     try {
       return await handler(req, ctx);
