@@ -13,7 +13,7 @@ const LEGACY_REDIRECTS: Record<string, string> = {
   '/home': '/', '/index': '/', '/index.html': '/',
   '/about-us': '/about', '/service': '/services', '/our-services': '/services',
   '/how-it-works': '/how-we-work', '/process': '/how-we-work',
-  '/contact-us': '/contact', '/news': '/blog', '/articles': '/blog',
+  '/contact-us': '/contact', '/prices': '/pricing', '/faqs': '/faq', '/insights': '/blog', '/news': '/blog', '/articles': '/blog',
 };
 const LOCALES = ['en', 'de', 'ar'];
 
@@ -41,5 +41,5 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon|robots.txt|sitemap.xml).*)'],
+  matcher: ['/((?!_next/static|_next/image|favicon|robots.txt|sitemap.xml|llms.txt).*)'],
 };

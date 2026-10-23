@@ -1,3 +1,4 @@
+import { pageMetadata } from '@/lib/site';
 
 import { Metadata } from 'next';
 import Link from 'next/link';
@@ -5,10 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { ArrowLeft, FileText } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'AI ROI Playbook | HumanAIze',
-  description: 'Download our comprehensive guide to achieving measurable ROI from AI initiatives in 90 days.',
-};
+export const metadata = pageMetadata('/resources/ai-roi-playbook', 'AI ROI Playbook | HumanAIze', 'Download our comprehensive guide to achieving measurable ROI from AI initiatives in 90 days.');
 
 export default function AIROIPlaybook() {
   return (

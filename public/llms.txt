@@ -1,0 +1,22 @@
+# HumanAIze
+
+> HumanAIze (HumanAIze FZE LLC, Dubai, UAE) is an AI transformation firm for mid-to-large enterprises in DACH (Germany, Austria, Switzerland) and the UAE. It ties its fees to defined business outcomes rather than hours billed, and works to make AI investments produce measurable ROI within 90 days. Vendor-neutral by design. Senior-led by policy. Outcome-linked by contract. Founder: Bagmi Sahoo. Contact: connect@human-aize.com
+
+## Offers (in order)
+
+- Blindspot — Opportunity Case Builder: optional, standalone, fixed-fee 3–5 day scan that builds a budget-ready AI business case for leadership sign-off.
+- Assess — Know Before You Invest: fixed-fee 6–12 week diagnostic; AI maturity audit, top-3 use cases scored, KPI baselines locked, 90-Day Value Hypothesis.
+- Activate — Strategy, Architecture & Governance: monthly retainer; 3-year AI roadmap, operating model alignment, regulatory compliance mapping (EU AI Act / UAE, DIFC-10, NIST).
+- Implement — Engineer AI Into the Core: 90-day ROI sprints with a fixed fee plus a KPI success fee, measured against a locked baseline; day-90 gate: scale, iterate, or kill.
+- Embed — Make AI Permanent, Not Peripheral: ongoing retainer to scale proven wins, build AI literacy and capability, Transformation-Office-as-a-Service.
+
+## Key pages
+
+- [Home](https://human-aize.com/)
+- [Services](https://human-aize.com/services)
+- [How we work](https://human-aize.com/how-we-work)
+- [Pricing](https://human-aize.com/pricing)
+- [About](https://human-aize.com/about)
+- [FAQ](https://human-aize.com/faq)
+- [Insights](https://human-aize.com/blog)
+- [Book an AI Readiness Diagnostic](https://human-aize.com/contact)
